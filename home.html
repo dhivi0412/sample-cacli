@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cacli</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+function add(){
+var a,b,c;
+a=Number(document.getElementById("fname").value);
+b=Number(document.getElementById("lname").value);
+c= a + b;
+document.getElementById("answer").value= c;
+}
+function sub(){
+var a,b,c;
+a=Number(document.getElementById("fname").value);
+b=Number(document.getElementById("lname").value);
+c= a - b;
+document.getElementById("answer").value= c;
+}
+function mul(){
+var a,b,c;
+a=Number(document.getElementById("fname").value);
+b=Number(document.getElementById("lname").value);
+c= a * b;
+document.getElementById("answer").value= c;
+}
+function div(){
+var a,b,c;
+a=Number(document.getElementById("fname").value);
+b=Number(document.getElementById("lname").value);
+c= a / b;
+document.getElementById("answer").value= c;
+}
+function quo(){
+var a,b,c;
+a=Number(document.getElementById("fname").value);
+b=Number(document.getElementById("lname").value);
+c= a % b;
+document.getElementById("answer").value= c;
+}
+  </script>
+  <style>
+  #d1
+    {
+        background-color: rgb(100, 7, 7);
+        color: white;
+        font-weight: bold;
+    }</style>
+</head>
+<div id="d1" class="jumbotron text-center">
+    <h1>ONLINE CALCULATOR</h1>
+    <p>Fast and easy way to calculate the numbers</p> 
+  </div>
+    
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="image.jpg" width="250" height="250" style="text-align: center;">
+        <br>
+      </div>
+      <div class="col-sm-4">
+          <h3>Enter the values</h3>
+          <hr>
+          <br>
+        <form >
+            <label for="fname">First number:</label>
+            <input type="text" id="fname" ><br><br>
+            <label for="lname">Last number:</label>
+            <input type="text" id="lname" ><br><br>
+            <button type="button" class="btn btn-info" onclick="add()"> Add +</button>
+            <button type="button" class="btn btn-info" onclick="sub()"> sub -</button>
+            <button type="button" class="btn btn-info" onclick="mul()">Mul *</button>
+            <button type="button" class="btn btn-info" onclick="div()">Div /</button>
+            <button type="button" class="btn btn-info" onclick="quo()">quo %</button>
+            <hr>
+            <br>
+            <label for="fname">Result : </label>
+            <input id="answer">
+            <br>
+          </form>
+      </div>
+      <div class="col-sm-4">
+        <h3>History</h3>  
+         <hr>
+        <p>In 1642, the first true <b>“calculator”</b> was invented: one that performed calculations through a clockwork-type of mechanism. The Pascal calculator, invented by French inventor and mathematician <b>Blaise Pascal</b>, was lauded for attempting arithmetic calculations previously thought impossible.</p>   
+       <p>An electronic calculator is typically a portable electronic device used to perform calculations, ranging from basic arithmetic to complex mathematics.</p>
+      </div>
+    </div>
+  </div>
+  
+  </body>
+  </html>
+  
